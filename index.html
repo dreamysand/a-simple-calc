@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Tailwid CSS -->
+	<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+	<title>A Simple Calc</title>
+</head>
+<body class="min-h-screen flex items-center justify-center">
+	<form id="calc" class="bg-[#23c265] w-[60%] p-4" action="#">
+		<!-- Title -->
+		<h1 class="font-bold text-center mb-3">Selamat Datang <br> di Web Kalkulator Sederhana</h1>
+
+		<!-- Input angka pertama -->
+		<div class="mb-3">
+			<label for="firstNumber">Angka pertama</label><br>
+			<input type="number" id="firstNumber" name="firstNumber" class="bg-white w-full">
+		</div>
+
+		<!-- Input angka kedua -->
+		<div class="mb-3">
+			<label for="secondNumber">Angka kedua</label><br>
+			<input type="number" id="secondNumber" name="secondNumber" class="bg-white w-full">
+		</div>
+
+		<!-- Hasil -->
+		<div class="mb-3">
+			<label for="result">Hasil</label><br>
+			<input type="text" readonly id="result" name="result" class="bg-white w-full">
+		</div>
+
+		<div class="grid grid-cols-2 gap-4">
+
+			<!-- Button tambah -->
+			<div class="mb-3 flex justify-center items-center">
+				<button class="bg-white w-[40%]" name="operator" type="submit" value="+">Tambah</button>
+			</div>
+
+			<!-- Button kurang -->
+			<div class="mb-3 flex justify-center items-center">
+				<button class="bg-white w-[40%]" name="operator" type="submit" value="-">Kurang</button>
+			</div>
+
+			<!-- Button kali -->
+			<div class="mb-3 flex justify-center items-center">
+				<button class="bg-white w-[40%]" name="operator" type="submit" value="*">Kali</button>
+			</div>
+
+			<!-- Button bagi -->
+			<div class="mb-3 flex justify-center items-center">
+				<button class="bg-white w-[40%]" name="operator" type="submit" value="/">Bagi</button>
+			</div>
+		</div>
+	</form>
+	<!-- Script JS -->
+	<script src="script.js"></script>
+</body>
+</html>
